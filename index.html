@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto API</title>
+</head>
+<body>
+
+  <!--HEADER INICIO-->
+
+
+<div id="content-container">
+    <div id="header">
+        <h1>DncWeather</h1>
+        <div id="right-content">
+          <a href="#busca" class="semazul">Endereços</a>
+          <a href="#regiao"class="semazul">Previsão do Tempo</a>
+        </div>
+    </div>
+
+   <!--HEADER FIM-->
+
+
+
+   <!--TEXTO2 INICIO-->
+
+    <div id="texto2">
+
+        <div class="texto-container">
+            <h2>Descubra Mais com Precisão:<br> Previsões do Tempo e endereços<br> em tempo real.</h2>
+          </div>
+        <img id="nuvem" src="imagens/nuvem.svg" width="100" alt="">
+       
+      </div>
+
+    <!--TEXTO2 FIM-->  
+
+
+
+
+
+
+     <!--FORMULARIO INICIO-->
+
+      <div id="contactForm">
+
+
+      <div  class="mt-6 mb-3  row">
+        <label for="nome" class="lado">Primeiro Nome:</label>
+        <div class="col-sm-10">
+          <input type="text"  class="especificacao" id="nome"  placeholder="Insara seu primeiro nome" required >
+        </div>
+        </div>
+
+
+
+       <div  class="mt-6 mb-3  row">
+        <label for="email" class="lad">E-mail:</label>
+        <div class="col-sm-10">
+          <input type="text"  class="especificacao" id="email"placeholder="Insara seu e-mail" required>
+        </div>
+        </div>
+
+
+       <div  class="mt-6 mb-3  row">
+        <label for="cep" class="lado">Digite o CEP:</label>
+        <div class="col-sm-10">
+          <input type="text"  class="especificacao" id="cep" placeholder="Insira o CEP">
+        </div>
+
+
+       
+
+
+        <section>
+            <p>Digite a latitude e longitude para saber a previsão:</p>
+            <div id="separado">
+            
+           
+              <div class="mt-6 mb-3 row">
+                <label for="latitude" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <input type="text" class="especificacao" id="latitude" placeholder="Latitude">
+                </div>
+            </div>
+
+            <div class="mt-6 mb-3 row">
+              <label for="longitude" class="col-sm-2 col-form-label"></label>
+              <div class="col-sm-10">
+                  <input type="text" class="especificacao" id="longitude" placeholder="Longitude">
+              </div>
+          </div>
+            </div>
+
+            <a id="botao" href="#regiao"  class="btn btn-primary w-100" onclick="getAddressByCep()-getPrevisao()">Acessar</a>
+            
+
+      <!--FORMULARIO FIM-->
+
+
+
+
+
+      <!--RESULTADO CEP INICIO-->
+
+        </section>
+        
+    </div>
+
+    </div>
+
+    <div id="busca">
+
+          <h4>Resultado da busca por CEP:</h4>
+          <img id="local" src="imagens/localizacao.svg" alt="">
+          </div>
+    <div id="resultado">
+      
+      <div id="resultadoa">
+        
+          <h3 class="informacoes">Logradouro/nome</h3> <h3 class="informacoes">Bairro/Distrito</h3>  <h3 class="informacoes">Localidade/UF</h3>
+          
+      </div>
+      <div id="resultadob">
+        <div>  <label for="rua" class="col-sm-2 col-form-label"></label>  <div class="col-sm-10">
+            <input type="text" class="cont" id="rua" value="">
+          </div>
+        </div>
+      
+        <div >  <label for="bairro" class="col-sm-2 col-form-label"></label>  <div class="col-sm-10">
+            <input type="text" class="cont" id="bairro" value="">
+          </div>
+        </div>
+      
+        <div >  <label for="estado" class="col-sm-2 col-form-label"></label>  <div class="col-sm-10">
+            <input type="text" class="cont" id="estado" value="">
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+<!--RESULTADO CEP FIM-->
+
+
+
+
+
+
+<!--RESULTADO PREVISAO INICIO-->
+  <div id="regiao">
+
+    <div class="regiao-container">
+        <h2>Previsão do tempo na região:</h2>
+      </div>
+    <img id="nuvem2" src="imagens/nuvem.svg" width="100" alt="">
+   
+  
+</div>
+
+
+
+<div id="resposta">
+  <label id="tempo" for="previsao">Previsão de tempo de acordo com a região:</label>
+  
+</div>
+
+<!--RESULTADO PREVISAO FIM-->
+  
+
+
+  
+
+
+<!--RODAPE INICIO-->
+
+</div>
+<footer>
+
+  <div class="linha2">
+    <a href="">Termos de Uso</a>
+    <a href="">Politica de Privacidade</a>
+
+
+
+</div>
+</footer>
+
+
+<!--RODAPE FIM-->
+
+  </div>
+
+  
+  
+      
+
+    
+
+    
+
+  
+
+    
+
+
+      <script src="apis.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJX
+VbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ </div>     
+    
+</body>
+</html>

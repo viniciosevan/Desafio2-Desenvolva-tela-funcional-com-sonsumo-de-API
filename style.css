@@ -1,0 +1,374 @@
+
+
+
+body{
+    background-color: rgb(228, 223, 223);
+    font-family: "inter";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/*HEADER INICIO*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 112, 242, 1);
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+  
+    
+    
+}
+
+#right-content:hanover {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: -300px; 
+    color:white;
+    
+}
+
+.semazul {
+  color: inherit; 
+
+  text-decoration: none; 
+  margin-left: 45px;
+}
+
+
+
+/*HEADER FIM*/
+
+
+
+
+/*TEXTO2 INICIO*/
+
+#texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 150px;
+    font-size: 35px;
+    
+  }
+  
+  
+  #nuvem{
+    margin-bottom: 120px;
+    width: 245px;
+    height: 197px;
+    top: 177px;
+    left: 2500px;
+    margin-left: 70px;
+
+  }
+
+/*TEXTO2 FIM*/
+
+
+
+
+/*FORMULARIO INICIO*/
+
+  #contactForm{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    padding: 100px;
+    border-radius: 20px;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 45px;
+    
+  }
+
+  #separado{
+    display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  text-align: center;
+  justify-content: center;
+  
+  }
+
+
+  .especificacao{
+    border-radius: 25px;
+    background-color: rgba(242, 242, 242, 0.9);
+    border-style: hidden;
+    text-align: center;
+    margin-bottom: 55px;
+    width: 300px;
+    height: 30px;
+    
+   
+    
+  }
+
+
+  .lado{
+    margin-left: -150px;
+    margin-right: 0px;
+  }
+
+  .lad{
+    margin-right: 180px;
+  }
+
+  #cont{
+    margin-left: 20px;
+    text-align: center;
+    
+  }
+  
+#botao{
+    background-color: rgba(12, 112, 242, 1);;
+    color: white;
+    font-size: 32px;
+    border-style: hidden;
+    border-radius: 25px;
+    width: 500px;
+    height: 45px;
+    top: 50px;
+    left: 500px;
+    cursor: pointer;
+    box-shadow: rgb(5, 69, 153);
+    padding: 2px 180px ;
+    text-decoration: none;
+  
+    
+    
+
+
+
+
+}
+
+/*FORMULARIO FIM*/
+
+
+
+
+
+/*RESULTADO CEP INICIO*/
+
+#busca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding: 150px;
+  margin-bottom: 10px;
+}
+
+#busca,h4{
+  font-size: 40px;
+  margin-bottom: -95px;
+  margin-left: -120px;
+}
+
+#local{
+  margin-bottom: -80px;
+}
+
+
+
+
+#resultado{
+  align-items: center;
+  background-color: rgb(228, 223, 223);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  width: 45%;
+ margin: auto;
+ width: 1024px;
+height: 72px;
+top: 2601px;
+left: 312px;
+gap: 0px;
+border-radius: 30px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+box-sizing: border-box;
+padding: 20px;
+
+
+
+
+
+  
+}
+
+#resultadoa{
+  background-color:  rgba(12, 112, 242, 1);
+  color: white;
+    width: 1024px;
+    height: 72px;
+    top: 2124px;
+    left: 302px;
+    
+    border-radius: 30px 30px 0px 0px;
+
+    opacity: 0px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    box-sizing: border-box;
+    padding: 20px;
+    grid-template-columns: repeat(4, auto); 
+  align-items: center;
+    
+   
+}
+
+.informacoes{
+  margin-left: 55px;
+}
+
+#resultadob {
+  display: flex;
+  justify-content: space-between; 
+  gap: 0px; 
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px 0px 30px 30px;
+  width: 1024px;
+    height: 72px;
+    top: 2124px;
+    left: 302px;
+}
+
+
+
+
+.cont {
+   
+  min-width: 150px; 
+  padding: 10px;
+  margin-left: 80px;
+  margin-right: 75px;
+  
+  
+  border-style: hidden;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+/*RESULTADO CEP FIM*/
+
+
+
+
+
+
+
+
+
+
+
+/*RESULTADO PREVISAO INICIO*/
+
+
+#regiao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  
+  
+}
+
+#regiao .regiao-container {
+  text-align: center;
+  margin-bottom: none;
+}
+
+#nuvem{
+  margin-bottom: 50px;
+  
+}
+
+#resposta{
+  
+  width: 590px;
+  height: 40px;
+  margin-left: 600px;
+  border-style: outset;
+  border-color: rgba(12, 112, 242, 1);;
+  background-color: rgb(252, 250, 250);
+  
+  border-radius: 55px;
+  text-align: center;
+  
+  
+}
+
+#tempo{
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background-color: rgb(254, 254, 254);
+  text-align: center
+  
+
+
+}
+
+/*RESULTADO PREVISAO FIM*/
+
+
+
+
+
+/*RODAPE INICIO*/
+
+footer .linha2{
+  display: flex;
+  justify-content: right;
+  margin: 0px;
+  padding: 10px;
+}
+
+footer .linha2 a{
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  
+
+}
+
+footer .linha2 a:first-child{
+  border-right: 3px solid white;
+}
+
+footer .linha2 a:hover{
+  color: rgb(89, 89, 138)
+  
+}
+
+footer{
+  width: 100%;
+  background-color:rgba(12, 112, 242, 1); 
+  margin-top: 200px;
+  text-align: right;
+  
+}
+
+
+/*RODAPE FIM*/
+
+
